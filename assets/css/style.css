@@ -54,3 +54,33 @@ a:hover {
   margin: 0 auto;
   opacity: 0.5;
 }
+
+/* css styles for index4 */
+.freddie, .brian, .roger, .john{
+  display: flex;
+}
+
+.freddie img, brian img, roger img, john img{
+  width: 50%;
+  height: 50%;
+  padding-right: 15px;
+}
+.nav{
+  background-color: #000000;
+  padding : 2vh;
+}
+.nav{
+  width: 100%;
+  height: auto;
+  margin:auto;
+}
+.nav ul{
+  width: 100%;
+  height: auto;
+  margin:auto;
+}
+.nav ul li{
+  text-decoration: none;
+  display: inline;
+  padding : 5vh 5vw;
+}
