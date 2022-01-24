@@ -43,12 +43,37 @@ a:hover {
   color: #e8e6f2;
 }
 .song {
-  background-color: #fffff3;
-  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/bohemian-rhapsody-1.jpg");
+  height: 45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.song__killer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/SHA.jpg");
+  height: 45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-.song__intro {
-  margin-bottom: 3.75rem;
+.song__text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fffff3;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.song__text h2 {
+  font-family: "Playfair Display SC", serif;
 }
 
 .container {
