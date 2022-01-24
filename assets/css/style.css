@@ -42,6 +42,26 @@ a {
 a:hover {
   color: #e8e6f2;
 }
+.song {
+  background-color: #fffff3;
+  text-align: center;
+}
+
+.song__intro {
+  margin-bottom: 3.75rem;
+}
+
+.container {
+  max-width: 88.375rem;
+  margin: 0 auto;
+}
+
+.container__pall {
+  padding-top: 4.375rem;
+  padding-right: 1.5rem;
+  padding-bottom: 4.375rem;
+  padding-left: 1.5rem;
+}
 .footer {
   background-color: #000;
   color: #ffffff;
@@ -50,7 +70,12 @@ a:hover {
 }
 
 .footer .container {
-  max-width: 88.375rem;
   margin: 0 auto;
   opacity: 0.5;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
