@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(164, 181, 212);
+    background-color:white;
 }
 
 .titulo{
@@ -19,3 +19,27 @@ body{
     width: 200px;
     height: 150px;
 }
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #d1dadd;
+    color: #d1dadd;
+}
+
+.footer1{
+    background-color: #d1dadd;
+    padding : 2vh;
+  }
+
+  .nav ul li{
+    text-decoration: none;
+    display: inline;
+    padding : 5vh 5vw;
+  }
+  .nav{
+    background-color: #d1dadd;
+    padding : 2vh;
+  }
