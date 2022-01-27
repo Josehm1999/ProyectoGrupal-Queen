@@ -43,7 +43,7 @@ a:hover {
   color: #e8e6f2;
 }
 .footer {
-  background-color: #000;
+  background-color: #180c0c;
   color: #ffffff;
   padding: 2.875rem 2.875rem 0.5rem 2.875rem;
   text-align: center;
@@ -81,26 +81,6 @@ a:hover {
 .freddie img, .brian img, .roger img, .john img{
   width: 50%;
   height: 50%;
-  padding-right: 15px;
-}
-.nav{
-  background-color: #000000;
-  padding : 2vh;
-}
-.nav{
-  width: 100%;
-  height: auto;
-  margin:auto;
-}
-.nav ul{
-  width: 100%;
-  height: auto;
-  margin:auto;
-}
-.nav ul li{
-  text-decoration: none;
-  display: inline;
-  padding : 5vh 5vw;
 }
 .double{
   display: flow-root;
@@ -111,14 +91,25 @@ a:hover {
 .freddie p, .brian p, .roger p, .john p{
   font-family: cursive;
   font-size: 3ex;
+  padding: 0rem 1.2rem;
 }
-.redes{
+.redes, .contact{
   display: inline;
   padding: 2vh 5vh;
 }
-
-.redes .red{
+.redes .red-social{
   padding: 2vh 0vh;
   width: 2%;
   height: 2%;
+}
+.navbar-nav .nav-item .nav-link:hover{
+  color: #0099ff;
+  zoom: 1.1;
+}
+
+.footer-bio{
+  background-color: #a0a0a0;
+}
+.mail{
+  color: #000000;
 }
