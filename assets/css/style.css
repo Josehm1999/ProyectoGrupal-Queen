@@ -6,45 +6,49 @@
 
 body {
   background-color: #ecf0f1;
+  font-family: "Playfair Display SC", serif;
 }
 
-.header {
+.banner {
   height: 100vh;
-  max-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../images/emiliano-cicero-EaZkGnrM154-unsplash.jpg);
+  width: 100%;
+  background:url('../images/overlay.png'),url('../images/emiliano-cicero-EaZkGnrM154-unsplash.jpg');
+	background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #ecf0f1;
 }
 
-.header .header_titulo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 2rem;
-  justify-content: space-between;
-  font-size: 4.2rem;
-  line-height: 1.2;
-  font-family: "Playfair Display SC", serif;
-
-  text-transform: uppercase;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-  color: #9e9ca8;
+.banner .navbar {
+  margin-top: 3%;
 }
 
-a:hover {
-  color: #e8e6f2;
+.navbar-light .navbar-nav .nav-link {
+  color: #ecf0f1
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #BBA14F;
+}
+
+.banner .info {
+  margin-top: 15%;
+  transform: translateY(-15%);
+}
+.banner .info h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ecf0f1;
+  letter-spacing: 0.125rem;
+}
+
+.banner .info p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #BBA14F;
+  letter-spacing: 0.125rem;
 }
 .song {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/bohemian-rhapsody-1.jpg");
+  background: url("../images/overlay.png"), url("../images/bohemian-rhapsody-1.jpg");
   height: 45rem;
   background-position: center;
   background-repeat: no-repeat;
@@ -52,13 +56,22 @@ a:hover {
   position: relative;
 }
 .song__killer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/SHA.jpg");
+  background: url("../images/overlay.png"), url("../images/SHA.jpg");
   height: 45rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+
+.song__brock {
+  background: url("../images/overlay.png"), url("../images/brighton_rock.jpg");
+  height: 45rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
 }
 
 .song__text {
@@ -67,25 +80,18 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fffff3;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
+  color: #ecf0f1;
 }
 
 .song__text h2 {
+  color: #BBA14F;
+}
+
+
+.song__text h2 {
   font-family: "Playfair Display SC", serif;
-}
-
-.container {
-  max-width: 88.375rem;
-  margin: 0 auto;
-}
-
-.container__pall {
-  padding-top: 4.375rem;
-  padding-right: 1.5rem;
-  padding-bottom: 4.375rem;
-  padding-left: 1.5rem;
 }
 .footer {
   background-color: #000;
@@ -95,14 +101,8 @@ a:hover {
 }
 
 .footer .container {
-  margin: 0 auto;
+  margin: 0 auto; 
   opacity: 0.5;
-}
-
-.flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 /* css styles for index4 */
 .title-bio, .bio{
@@ -171,3 +171,5 @@ a:hover {
   width: 2%;
   height: 2%;
 }
+
+
