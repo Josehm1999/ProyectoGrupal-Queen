@@ -14,4 +14,4 @@ Integrantes:
 * Julia Mosquera
 * Juan Carlos Gelpud
 
-![image](https://user-images.githubusercontent.com/49110761/150877044-e0f9c2bc-d6d8-4df8-a0ea-cfd77fe0b5a3.png)
+![image](https://user-images.githubusercontent.com/49110761/151412718-55661c2f-412e-46b3-96b6-32c033618c0d.png)
