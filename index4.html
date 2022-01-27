@@ -1,115 +1,205 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biografia Queen</title>
+    <title>Conciertos de Queen</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/ConcertStyle.css" />
   </head>
-  <body>
-    <div class="nav">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="#">Discograf&iacute;a</a></li>
-        <li><a href="#">Conciertos</a></li>
-        <li><a href="#">Galer&iacute;a</a></li>
-      </ul>
-    </div>
-    <h1 class="title-bio">Biografia</h1>
-    <div class="bio">
-      <h2>Historia de Queen</h2>
-      <div class="double">
-        <p>
-          Es una banda de rock británica que gozó de gran fama desde mediados de
-          los setenta y durante toda la década de los ochenta; la espectacularidad
-          y dinamismo de sus actuaciones y la asimilación al rock de tendencias
-          jazzísticas, sinfónicas y operísticas fueron algunas de las claves de su
-          éxito, tan abrumador que sus discos fueron superventas incluso después
-          del fallecimiento en 1991 de su líder, el cantante Freddie Mercury.
-          Creado en 1970, el grupo estuvo formado por Freddie Mercury (voz), Brian
-          May (guitarra), Roger Taylor (batería) y John Deacon (bajo).
-        </p>
-        <p>
-          La familia Bulsara se trasladó a Middlesex en 1964 y desde allí Freddie
-          se incorporó a una banda de blues llamada Wreckage, mientras estudiaba
-          cursos de diseño gráfico en el Ealing College of Art. Cuando cantaba en
-          Wreckage, un compañero de estudios presentó a Freddie con Roger Taylor y
-          Brian May, fundadores de un grupo llamado Smile. Smile mutó a Queen
-          cuando Freddie se unió a Roger y Brian como vocalista. El último en
-          sumarse a los integrantes de la banda, que permanecieron juntos durante
-          los próximos veinte años, fue el bajista John Deacon, quien lo hizo el
-          1º de marzo de 1971.
-        </p>
-      </div>
-    </div>
-    <div class="members">
-      <h2>Freddie Mercury</h2>
-      <div class="freddie">
-        <img src="./assets/images/Freddie_Mercury.jpg" alt="" />
-        <p>
-          La vida de Farrokh Bulsara comenzó en la isla africana occidental de
-          Zanzíbar el 5 de septiembre de 1946. Luego de veinticinco años más
-          tarde en Londres, bajo el nombre de Freddie Mercury, estaba al frente
-          del grupo de rock ahora legendario llamado Queen.
-        </p>
-      </div>
-      <h2>Brian May</h2>
-      <div class="brian">
-        <img src="./assets/images/Brian_May.jpg" alt="" />
-        <p>
-          Nacío el 19 de julio de 1947 y es un músico, compositor,
-          multiinstrumentista, activista y astrofísico británico. Es conocido
-          por ser guitarrista, compositor, vocalista y en ocasiones teclista de
-          la banda británica Queen.
-        </p>
-      </div>
-      <h2>Roger Taylor</h2>
-      <div class="roger">
-        <img src="./assets/images/Roger_Taylor.jpg" alt="" />
-        <div class="double">
-          <p>
-            Roger Meddows Taylor nacío el 26 de julio de 1949 en King's Lynn,
-            Norfolk, Inglaterra. Más conocido como Roger Taylor, es un músico,
-            compositor, multiinstrumentista y productor cinematográfico​
-            británico. En algunas canciones como solista actuó como guitarrista y
-            vocalista. Ha escrito canciones famosas de Queen como "Sheer Heart
-            Attack", "I'm In Love With My Car", "Radio Ga Ga" o "A Kind of Magic".
-            También escribió otras como "Breakthru" o "Innuendo" junto con Freddie
-            Mercury.
-          </p>
-          <p>
-            La revista Rolling Stone ubicó a Roger Taylor en el puesto 14 de su
-            lista de los mejores 100 bateristas de la historia, por lo que según
-            la revista mencionada Roger es el 11° mejor batería vivo, ya que 3 de
-            los bateristas que están entre los primeros 13 fallecieron (1° John
-            Bonham, 6° Keith Moon, 11° Cozy Powell). Además ocupa el 8° puesto de
-            los 30 baterías más ricos del mundo, con 105 millones de dólares.
-            Taylor Hawkins, batería de Foo Fighters, ha afirmado que Roger es uno
-            de los baterías más influyentes en la historia de la música.
-          </p>
-        </div>
-      </div>
-      <h2>John Deacon</h2>
-      <div class="john">
-        <img src="./assets/images/John_Deacon.jpg" alt="" />
-        <div class="double">
-          <p>
-            Nacío el 19 de agosto de 1951 en leiceter inglaterra. Es un músico y
-            compositor británico retirado, famoso por haber sido el bajista de la
-            banda de rock Queen. En varios discos también desempeñó el papel de
-            guitarrista y más ocasionalmente de teclista. Es el autor de algunos
-            de los grandes éxitos de la banda, tales como "You're My Best Friend",
-            "Spread Your Wings", "Another One Bites the Dust", "I Want to Break
-            Free" o "Friends Will Be Friends", lo que demuestra su importante
-            aporte al grupo en materia creativa.
-          </p>
-          <p>
-            Considerado uno de los bajistas más versátiles de la historia del
-            rock, la revista Rolling Stone lo colocó en el puesto 32 en su lista
-            de los 100 mejores bajistas de la historia.
-          </p>
-        </div>
-      </div>
-    </div>
+  <body class="cuerpo">
+    <header>
+      <h1 class="titulo">
+        <a>QUEEN</a>
+        <a>EN</a>
+        <a>CONCIERTO</a>
+      </h1>
+
+      <img src="./assets/images/JHimg1.jpg" alt="" class="image" />
+      <p></p>
+    </header> <h2 class="audio"><p> QUEEN - Bohemian Rhapsody -- Live concert 
+    <audio controls src="assets/audio/queen_concierto.mp3" autoplay style="width: 30%; height: 20px; right: 0%;"></audio></p></h2>
+  </div>
+    <h2 class="texto">
+      <p>
+        <strong>Queen</strong> ha realizado 13 giras en sus más de 3 décadas. Después de la
+        muerte de Freddie Mercury, se hizo una gira entre 2005-2008 con Paul
+        Rodgers en la voz, y desde el año 2012 cuentan con Adam Lambert en
+        sustitución de Rodgers.Esta es la lista de giras, y lanzamientos en cada
+        gira realizados por la banda de rock inglesa Queen hasta la actualidad.
+      </p>
+    </h2>
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <td>Año</td>
+          <td>Nombre de la Gira</td>
+          <td>Países Visitados</td>
+          <td>Shows</td>
+          <td>Grabaciones</td>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1973</td>
+        <td>Queen I Tour</td>
+        <td>Reino Unido Alemania Luxemburgo Australia</td>
+        <td>35</td>
+        <td>
+          Grabación del concierto en Golders Green Hippodrome de Londres por la
+          BBC
+        </td>
+      </tr>
+      <tr>
+        <td>1974</td>
+        <td>Queen II Tour</td>
+        <td>Reino Unido Estados Unidos</td>
+        <td>41</td>
+        <td>Live at the Rainbow'74. CD, DVD en vivo</td>
+      </tr>
+      <tr>
+        <td>1974 - 1975</td>
+        <td>Sheer Heart Attack Tour</td>
+        <td>
+          Reino Unido Alemania Suecia Finlandia Holanda España Bélgica Estados
+          Unidos Canadá Japón
+        </td>
+        <td>77</td>
+        <td>Live at the Rainbow'74. CD, DVD en vivo</td>
+      </tr>
+      <tr>
+        <td>1975 - 1976</td>
+        <td>A Night At The Opera Tour</td>
+        <td>Reino Unido Estados Unidos Japón Australia</td>
+        <td>77</td>
+        <td>Un concierto fue grabado por la BBC en Navidad de 1975</td>
+      </tr>
+      <tr>
+        <td>1976</td>
+        <td>Gira de Verano 1976</td>
+        <td>Esocia Inglaterra Gales</td>
+        <td>4</td>
+        <td>Fue grabado el concierto en el Hyde Park de Londres</td>
+      </tr>
+      <tr>
+        <td>1977</td>
+        <td>A Day At The Races Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Dinamarca Estados Unidos Canadá
+        </td>
+        <td>59</td>
+        <td>Fue grabado el concierto en Earl's Court en Londres</td>
+      </tr>
+      <tr>
+        <td>1977 - 1978</td>
+        <td>News Of The World Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Estados Unidos
+          Canadá Suecia Austria Dinamarca
+        </td>
+        <td>46</td>
+        <td>Fue grabado el concierto en Houston en Estados Unidos</td>
+      </tr>
+      <tr>
+        <td>1978 - 1979</td>
+        <td>Jazz Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Estados Unidos
+          Canadá España Yugoslavia
+        </td>
+        <td>79</td>
+        <td>Live Killers - Disco en Vivo</td>
+      </tr>
+      <tr>
+        <td>1979</td>
+        <td>Crazy Tour</td>
+        <td>Reino Unido Irlanda</td>
+        <td>20</td>
+        <td>Concerts for People of Kampuchea - LP por varios artistas</td>
+      </tr>
+      <tr>
+        <td>1980 - 1981</td>
+        <td>The Game Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Estados Unidos
+          Canadá México Japón Venezuela Brasil Argentina
+        </td>
+        <td>83</td>
+        <td>
+          We Will Rock You - VHS en vivo Queen Rock Montreal - CD, DVD en vivo
+        </td>
+      </tr>
+      <tr>
+        <td>1982</td>
+        <td>Hot Space Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Estados Unidos
+          Canadá Japón Suecia Noruega Austria
+        </td>
+        <td>69</td>
+        <td>Queen on Fire - Live at the Bowl - CD, DVD en vivo</td>
+      </tr>
+      <tr>
+        <td>1984 - 1985</td>
+        <td>1985 The Works Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Irlanda Italia
+          Japón Austria Brasil Sudáfrica Australia
+        </td>
+        <td>45</td>
+        <td>
+          Queen Live in Rio - VHS en vivo We Are the Champions: Final Live in
+          Japan - VHS, DVD en vivo
+        </td>
+      </tr>
+      <tr>
+        <td>1986</td>
+        <td>Magic Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Irlanda Hungría
+          Austria España
+        </td>
+        <td>26</td>
+        <td>
+          Live Magic - CD en vivo Queen Live in Budapest - VHS en vivo Live at
+          Wembley '86 - CD en Vivo Queen at Wembley - VHS, DVD en vivo
+        </td>
+      </tr>
+      <tr>
+        <td>2005 - 2006</td>
+        <td>Queen + Paul Rodgers Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Holanda Francia Bélgica Irlanda Italia
+          Hungría Austria España Suecia República Checa Portugal Aruba Estados
+          Unidos Canadá Japón Sudáfrica
+        </td>
+        <td>66</td>
+        <td>
+          Return of the Champions - CD , DVD en vivo Super Live in Japan - DVD
+          en vivo
+        </td>
+      </tr>
+      <tr>
+        <td>2008</td>
+        <td>Rock the Cosmos Tour</td>
+        <td>
+          Reino Unido Alemania Suiza Serbia Holanda Francia Bélgica Irlanda
+          Italia Hungría Austria España República Checa Chile Argentina Brasil
+        </td>
+        <td>40</td>
+        <td>Live in Ukraine - DVD en vivo</td>
+      </tr>
+    </tbody>
+    </table>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
