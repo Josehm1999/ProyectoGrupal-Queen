@@ -2,25 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styleD.css" />
-    <title>Document</title>
+    <title>MasterSoft</title>
   </head>
   <body>
-    <div class="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Discografia</a></li>
-        <li><a href="#">Conciertos</a></li>
-        <li><a href="#">Galeria</a></li>
-      </ul>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Discografia</a>
+            <a class="nav-link" href="#">Conciertos</a>
+            <a class="nav-link disabled">Galeria</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <h1 class="titulo">Información Discografica Banda Queen</h1>
-    <img class="image" src="./assets/images/disco.jpg" alt=""/>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./assets/images/img1.jpg" class="image3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/img5.jpg" class="image3" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/images/queen4.jpg" class="image3" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
 
-    <h3>Informacion General</h3>
-    <table border="1">
+    <center><h3>Informacion General</h3></center>
+    <table class="table table-striped">
       <tr>
         <td>Álbumes de estudio</td>
         <td>14</td>
@@ -44,7 +78,7 @@
     </table>
 
     <center><h2>Álbumes de estudio</h2></center>
-    <table border="1" style="margin: 0 auto">
+    <table class="table-bordered" style="margin: 0 auto">
       <tr>
         <td>Año</td>
         <td>Álbum</td>
@@ -71,8 +105,9 @@
         <td>1.Death On Two Legs<br>2.Lazing On A Sunday Afternoon<br>3.I'm In Love With My Car<br>4.You're My Best Friend<br>5.39<br>6.Sweet Lady<br>7.Seaside Rendezvous<br>8.The Prophet's Song<br>9.Love of My Life<br>10.Good Company<br>11.Bohemian Rhapsody<br>12.She Makes Me<br>12.God Save The Queen</td>
       </tr>
     </table>
-    <h3>Keep Yourself Alive</h3>
-    <p>
+    <br>
+    <h4>Keep Yourself Alive</h4>
+    <p class="lh-sm">
       Brian May escribió la canción después de que la banda haya sido formada,
       pero antes de que el bajista John Deacon se uniera. De acuerdo a lo que
       May en un especial de radio sobre su álbum de 1977, News of the World, May
@@ -80,8 +115,8 @@
       su sentido fue cambiado completamente cuando Mercury las cantó.
     </p>
 
-    <h3>Doing All Right</h3>
-    <p>
+    <h4>Doing All Right</h4>
+    <p class="lh-sm">
       Doing All Right" fue escrita por May y Tim Staffell mientras estuvo en
       Smile. Esta es una de las pocas canciones en presentar a May en el piano.
       El también tocó su vieja guitarra acústica Hallfredh en está canción y
@@ -90,8 +125,8 @@
       manera cuando se convirtió en una canción de Queen
     </p>
 
-    <h3>Great King Rat</h3>
-    <p>
+    <h4>Great King Rat</h4>
+    <p class="lh-sm">
       Great King Rat" fue escrita por Mercury. Está canción es un claro ejemplo
       del primer sonido de Queen, con una duración aproximada de 5 minutos con
       42 segundos. A pesar de que la canción no haya sido publicada como
@@ -99,8 +134,8 @@
       de Queen.
     </p>
 
-    <h3>My Fairy King</h3>
-    <p>
+    <h4>My Fairy King</h4>
+    <p class="lh-sm">
       My Fairy King", escrita por Mercury, trata de Rhye, un mundo de fantasía
       que el creó y la cuál está presente en otras canciones de Queen,
       particularmente en "Seven Seas of Rhye" y Lily Of The Valley. "My Fairy
@@ -115,8 +150,8 @@
       Mercury.
     </p>
 
-    <h3>2Liar</h3>
-    <p>
+    <h4>Liar</h4>
+    <p class="lh-sm">
       "Liar" fue escrita por Mercury en 1970 mientras el todavía era conocido
       como Farrokh "Freddie" Bulsara, y antes de que Deacon se uniera a la banda
       el año siguiente. Es una de las canciones más pesadas de la banda. Como se
@@ -126,8 +161,8 @@
       apertura como una transición a "Tear It Up".
     </p>
 
-    <h3>The Night Comes Down</h3>
-    <p>
+    <h4>The Night Comes Down</h4>
+    <p class="lh-sm">
       May escribió la canción poco después de la creación de la banda en 1970,
       siguiendo la desintegración de Smile. Fue grabada en los estudios De Lane
       Lea en diciembre de 1971, cuando la banda fue contratada para probar los
@@ -143,8 +178,8 @@
       holding the world inside".1
     </p>
 
-    <h3>Modern Times Rock 'n' Roll</h3>
-    <p>
+    <h4>Modern Times Rock 'n' Roll</h4>
+    <p class="lh-sm">
       La canción fue escrita y cantada por Taylor, la cual fue re-grabada en dos
       ocasiones para la BBC. La primera data de diciembre de 1973 y fue
       transmitida en el programa de John Peel. Está versión fue eventualmente
@@ -154,8 +189,8 @@
       disponible en álbumes no oficiales hasta el lanzamiento de On Air.
     </p>
 
-    <h3>Son and Daughter</h3>
-    <p>
+    <h4>Son and Daughter</h4>
+    <p class="lh-sm">
       Son and Daughter" fue escrita por May y publicado como lado B del
       lanzamiento de sencillo de "Keep Yourself Alive". La canción fue
       interpretada en los primeros conciertos de la banda bajo el nombre de
@@ -164,16 +199,18 @@
       El solo no sería grabado adecuadamente hasta 1974, con "Brighton Rock" del
       álbum Sheer Heart Attack.
     </p>
-    <h3>Jesus</h3>
-    <p>
+
+    <h4>Jesus</h4>
+    <p class="lh-sm">
       Las letras cuentan parte de la historia de Jesús de Nazareth. Mercury, a
       quien se le atribuye la composición de la canción, fue un parsi
       zoroastrista. Debido a los efectos creados por la guitarra de May, la Red
       Special, entre otras cosas, muchos de los primeros seguidores de Queen
       vieron a la banda como un grupo de rock psicodélico
     </p>
-    <h3>Seven Seas of Rhye</h3>
-    <p>
+
+    <h4>Seven Seas of Rhye</h4>
+    <p class="lh-sm">
       Seven Seas of Rhye" fue escrita por Mercury, la cual se convertiría en el
       primer sencillo exitoso de la banda. En este álbum es sólo una pequeña
       pieza instrumental para finalizar el álbum. La versión definitiva de la
@@ -181,7 +218,7 @@
     </p>
 
     <center><h2>Álbumes en directo</h2></center>
-    <table border="1" style="margin: 0 auto">
+    <table class="table-bordered" style="margin: 0 auto">
       <tr>
         <td>Año</td>
         <td>Datos del álbum</td>
@@ -232,16 +269,16 @@
       </tr>
     </table>
 
-    <h3>Live Killers</h3>
-    <p>
+    <h4>Live Killers</h4>
+    <p class="lh-sm">
       Live Killers es un álbum doble en vivo de la banda de rock británica
       Queen, lanzado el 22 de junio de 1979.1​ El álbum fue grabado en vivo
       durante la etapa europea del Jazz Tour, entre el 26 de enero y el 1 de
       marzo de 1979.
     </p>
 
-    <h3>Live Magic</h3>
-    <p>
+    <h4>Live Magic</h4>
+    <p class="lh-sm">
       Live Magic es el segundo disco en vivo de la banda de rock Queen lanzado
       en 1986. Se grabó durante la gira Magic Tour en 4 conciertos del verano
       europeo. Este disco ha sido altamente criticado por los fans de la banda
@@ -252,8 +289,8 @@
       recortados en el álbum).
     </p>
 
-    <h3>At the Beeb</h3>
-    <p>
+    <h4>At the Beeb</h4>
+    <p class="lh-sm">
       Queen At the Beeb es un álbum recopilatorio realizado por la banda de Rock
       inglesa Queen realizado en disco de vinilo, CD y casete. Las canciones
       fueron grabadas en dos sesiones para la BBC. Las primeras 4 canciones
@@ -262,8 +299,8 @@
       el quinto tema de este recopilatorio, es del disco Queen II.
     </p>
 
-    <h3>Live at Wembley '86</h3>
-    <p>
+    <h4>Live at Wembley '86</h4>
+    <p class="lh-sm">
       Live at Wembley '86 es un doble compact disc en vivo de la banda inglesa
       Queen. El concierto fue grabado el 12 de julio de 1986 durante el Magic
       Tour en el Estadio de Wembley en Londres, Inglaterra, y lanzado el 26 de
@@ -271,14 +308,14 @@
       relanzado en un CD doble remasterizado en agosto de 2003 en los Estados
       Unidos.
     </p>
-    <h3>Queen on Fire - Live at the Bowl</h3>
-    <p>
+    <h4>Queen on Fire - Live at the Bowl</h4>
+    <p class="lh-sm">
       El álbum Queen on Fire - Live at the Bowl es el cuarto disco en vivo de
       Queen. Fue grabado en el Hot Space Tour en 1982, y lanzado el 25 de
       octubre de 2004 junto con un DVD del mismo concierto.
     </p>
-    <h3>Queen Rock Montreal</h3>
-    <p>
+    <h4>Queen Rock Montreal</h4>
+    <p class="lh-sm">
       Queen Rock Montreal es un doble-disco en vivo realizado por la banda de
       Rock inglesa Queen después de grabar 2 conciertos en Montreal, Canadá, en
       noviembre de 1981, exactamente 10 años antes de la muerte de Freddie
@@ -288,8 +325,8 @@
       Rock You", con el CD/DVD fue lanzado bajo el nombre de "Queen Rock
       Montreal".
     </p>
-    <h3>Magic Tour: Live in Budapest</h3>
-    <p>
+    <h4>Magic Tour: Live in Budapest</h4>
+    <p class="lh-sm">
       Queen Live in Budapest es un VHS de la grabación de un concierto en el
       Népstadion (hoy Estadio Ferenc Puskás) en la ciudad de Budapest, Hungría,
       realizado por la banda de Rock británica Queen el 27 de julio de 1986
@@ -302,8 +339,8 @@
       resto del mundo y en los EE. UU. se lanzó al día siguiente.
     </p>
 
-    <h3>Live at the Rainbow '74</h3>
-    <p>
+    <h4>Live at the Rainbow '74</h4>
+    <p class="lh-sm">
       Live at the Rainbow '74 es un álbum en directo de la banda inglesa de rock
       Queen. Fue publicado el 8 de septiembre de 2014, cuarenta años después de
       los conciertos que se pueden escuchar en el álbum. Hay varias ediciones de
@@ -314,8 +351,8 @@
       tuvo lugar el 31 de marzo de 1974 en el mismo Rainbow Theatre de Londres.
     </p>
 
-    <h3>A Night at the Odeon</h3>
-    <p>
+    <h4>A Night at the Odeon</h4>
+    <p class="lh-sm">
       A Night at the Odeon es un álbum en vivo de la banda británica Queen. El
       álbum es el primer lanzamiento oficial de la actuación en Nochebuena de la
       banda en el Hammersmith Odeon en 1975, filmado por la BBC. El show fue
@@ -324,8 +361,8 @@
       de la banda.
     </p>
 
-    <h3>On Air</h3>
-    <p>
+    <h4>On Air</h4>
+    <p class="lh-sm">
       On Air (también llamado Queen on Air: The Complete BBC Sessions3​) es un
       álbum compilatorio de la banda británica Queen. Publicado el 4 de
       noviembre de 2016 a través de Virgin EMI Records. Fue lanzado en formato
@@ -336,8 +373,8 @@
       Capital Radio y BBC Radio 1.
     </p>
 
-    <h3>Live Around the World</h3>
-    <p>
+    <h4>Live Around the World</h4>
+    <p class="lh-sm">
       Live Around the World es un álbum en vivo por la banda Queen + Adam
       Lambert, lanzado el 2 de octubre de 2020 por Hollywood Records en América
       del Norte y por EMI Records mundialmente.3​ Es una compilación de
@@ -348,7 +385,7 @@
     </p>
 
     <center><h2>Álbumes recopilatorios</h2></center>
-    <table border="1" style="margin: 0 auto">
+    <table class="table-bordered" style="margin: 0 auto">
       <tr>
         <td>Año</td>
         <td>Datos del álbum</td>
@@ -430,8 +467,8 @@
         <td>Greatest Hits in Japan<br>Publicación: 15 de enero<br>Discográfica: Virgin EMI</td>
       </tr>
     </table>
-    <h3>Greatest Hits</h3>
-    <p>
+    <h4>Greatest Hits</h4>
+    <p class="lh-sm">
       Greatest Hits es el primer álbum compilatorio de la banda de rock Queen,
       aparecido en 1981. En él se reúnen los éxitos de la banda entre 1973 y
       1981. Esta lista corresponde a la edición en el Reino Unido. En otros
@@ -444,8 +481,8 @@
       como Keep Yourself Alive o Liar.
     </p>
 
-    <h3>Greatest Hits II</h3>
-    <p>
+    <h4>Greatest Hits II</h4>
+    <p class="lh-sm">
       Greatest Hits II es un álbum compilatorio de la banda de rock Queen,
       aparecido en 1991. En él se reúnen los éxitos de la banda entre 1981 y
       1991. Las ventas de este disco, sumado a su contraparte estadounidense
@@ -458,16 +495,16 @@
       último material publicado por el grupo con su cantante en vida.
     </p>
 
-    <h3>Classic Queen</h3>
-    <p>
+    <h4>Classic Queen</h4>
+    <p class="lh-sm">
       Classic Queen es un disco recopilatorio realizado por la banda de Rock
       inglesa Queen tras la fiebre por Queen generada después del éxito de la
       película Wayne's World, y como consecuencia de ello fue aclamado como un
       excelente recopilatorio.
     </p>
 
-    <h3>The 12" Collection</h3>
-    <p>
+    <h4>The 12" Collection</h4>
+    <p class="lh-sm">
       The 12" Collection es un álbum compilatorio de la banda de rock británica
       Queen. Fue publicado en mayo de 1992 a través de Parlophone Records.1​
       Contiene varios sencillos de doce pulgadas y remixes. "Bohemian Rhapsody"
@@ -477,8 +514,8 @@
       extendida. Las notas del álbum no menciona por qué fue incluida.2​
     </p>
 
-    <h3>Queen Rocks</h3>
-    <p>
+    <h4>Queen Rocks</h4>
+    <p class="lh-sm">
       Queen Rocks es un álbum recopilatorio de Queen, lanzado al mercado el 3 de
       noviembre de 1997.1​ Está compuesto por 18 canciones; 17 de ellas
       pertenecen a los álbumes anteriormente lanzados (la mayoría de las
@@ -489,8 +526,8 @@
       de John Deacon, ya que, tras esto no volvería a aparecer en público.
     </p>
 
-    <h3>Greatest Hits III</h3>
-    <p>
+    <h4>Greatest Hits III</h4>
+    <p class="lh-sm">
       Greatest Hits III es el cuarto disco recopilatorio de Queen a nivel
       internacional, y el tercero de la colección Greatest Hits. El álbum está
       compuesto por 17 temas, que recorren la carrera de Queen desde Hot Space
@@ -499,28 +536,29 @@
       John, Wyclef Jean y Monserrat Caballé.
     </p>
 
-    <h3>Jewels</h3>
-    <p>
+    <h4>Jewels</h4>
+    <p class="lh-sm">
       Jewels es un álbum compilatorio de la banda de rock británica Queen,
       publicado el 28 de enero de 2004. El álbum fue lanzado sólo en Japón en
       CD.2​ Fue lanzado junto a un DVD con el mismo nombre, que incluye los
       videos oficiales de las canciones más dos canciones extras.
     </p>
 
-    <h3>Jewels II</h3>
-    <p>
+    <h4>Jewels II</h4>
+    <p class="lh-sm">
       Jewels II es un álbum compilatorio de la banda británica Queen, publicado
       el 26 de enero de 2005. El álbum fue lanzado sólo en Japón en CD.
     </p>
-    <h3>Stone Cold Classics</h3>
-    <p>
+
+    <h4>Stone Cold Classics</h4>
+    <p class="lh-sm">
       Stone Cold Classics es un disco recopilatorio lanzado el 11 de abril de
       2006 de la mano de un capítulo de la serie American Idol en la que los
       participantes tenían que cantar temas de Queen.
     </p>
 
-    <h3>The A-Z of Queen, Volume 1</h3>
-    <p>
+    <h4>The A-Z of Queen, Volume 1</h4>
+    <p class="lh-sm">
       The A-Z of Queen, Volume 1 es un álbum recopilatorio lanzado por la banda
       de Rock inglesa Queen en 2007. El álbum contiene 2 discos (CD y DVD) y
       solo es disponible en las tiendas Wal-Mart, los discos contiene versiones
@@ -529,13 +567,13 @@
       Taylor y Brian May durante su Queen + Paul Rodgers Tour en 2005 y 2006.
     </p>
 
-    <h3>Absolute Greatest</h3>
-    <p>
+    <h4>Absolute Greatest</h4>
+    <p class="lh-sm">
       Absolute Greatest es un álbum recopilatorio lanzado por la banda de Rock
       inglesa Queen en 2009.
     </p>
-    <h3>Deep Cuts: Volume I</h3>
-    <p>
+    <h4>Deep Cuts: Volume I</h4>
+    <p class="lh-sm">
       Deep Cuts, Volume 1 (1973–1976) es un álbum recopilatorio de Queen, que
       comprende el período 1973-76. Contiene canciones que no fueron editadas en
       formato sencillo, no muy conocidas. Fueron elegidas por Brian May, Roger
@@ -545,8 +583,8 @@
       at the Races).
     </p>
 
-    <h3>Deep Cuts: Volume II</h3>
-    <p>
+    <h4>Deep Cuts: Volume II</h4>
+    <p class="lh-sm">
       Deep Cuts, Volume 2 (1977–1982) es una recopilación de canciones de Queen
       entre 1977 y 1982. Como su predecesor (Deep Cuts, volumen 1), contiene
       canciones que son menos conocidas. El álbum fue lanzado el 27 de junio de
@@ -557,8 +595,8 @@
       álbumes.
     </p>
 
-    <h3>Deep Cuts: Volume III</h3>
-    <p>
+    <h4>Deep Cuts: Volume III</h4>
+    <p class="lh-sm">
       Deep Cuts, Volume 3 (1984–1995) es una recopilación de Queen con algunos
       de sus temas menos conocidos entre 1984 y 1995. El álbum fue lanzado el 5
       de septiembre de 2011 como parte del 40 º Aniversario de la banda. Deep
@@ -567,16 +605,16 @@
       Magic, The Miracle, Innuendo y Made in Heaven).
     </p>
 
-    <h3>Icon</h3>
-    <p>
+    <h4>Icon</h4>
+    <p class="lh-sm">
       Icon es un álbum recopilatorio de la banda de rock británica Queen,
       lanzado el 11 de junio de 2013 por Hollywood Records.1​ El álbum fue
       lanzado únicamente en los Estados Unidos en una versión de edición
       limitada.
     </p>
 
-    <h3>Queen Forever</h3>
-    <p>
+    <h4>Queen Forever</h4>
+    <p class="lh-sm">
       Queen Forever es un álbum recopilatorio de Queen que fue lanzado el 11 de
       noviembre de 2014.9​ El contenido del álbum consta de canciones con la voz
       de Freddie Mercury y con colaboraciones de Michael Jackson, pero que no
@@ -585,8 +623,8 @@
       Roger Taylor, con armonías vocales hechas recientemente.
     </p>
 
-    <h3>Bohemian Rhapsody: The Original Soundtrack</h3>
-    <p>
+    <h4>Bohemian Rhapsody: The Original Soundtrack</h4>
+    <p class="lh-sm">
       Bohemian Rhapsody: The Original Soundtrack es el álbum de banda sonora de
       la película biografía de 2018 del mismo nombre. La banda sonora contiene
       varias canciones de Queen y grabaciones inéditas, incluyendo varias
@@ -596,15 +634,16 @@
       álbum presenta una fotografía por Denis O'Regan.9​
     </p>
 
-    <h3>Greatest Hits in Japan</h3>
-    <p>
+    <h4>Greatest Hits in Japan</h4>
+    <p class="lh-sm">
       Greatest Hits in Japan (Selected by Japanese Fans) es un álbum
       compilatorio de la banda británica Queen. Fue publicada el 15 de enero de
       2020 a través de Universal Music Group. El álbum fue publicado sólo en
       Japón como un lanzamiento de edición limitada.
     </p>
+
     <center><h2>Álbumes recopilatorios</h2></center>
-    <table border="1" style="margin: 0 auto">
+    <table class="table-bordered" style="margin: 0 auto">
       <tr>
         <td>Año</td>
         <td>Datos del álbum</td>
@@ -618,13 +657,15 @@
         <td>Five Live (con George Michael y Lisa Stansfield)</td>
       </tr>
     </table>
-    <h3>Queen's First E.P.</h3>
-    <p>Queen's First E.P. es el primer EP de la banda británica Queen. Publicada el 20 de mayo de 1977 por EMI Records.2​ El álbum consiste de cuatro canciones, una de cada uno de sus cuatro más recientes álbumes en ese punto, con "Good Old-Fashioned Lover Boy" como el sencillo principal.</p>
-    <h3>Five Live</h3>
-    <p>Five Live, publicado en 1993, presenta cinco (en algunos países seis) canciones interpretadas por George Michael, Queen y Lisa Stansfield. Somebody to Love y These Are the Days of Our Lives fueron grabadas en el Concierto Tributo a Freddie Mercury el 20 de abril de 1992 en el Estadio de Wembley. Todos los beneficios derivados de las ventas del EP fueron para Mercury Phoenix Trust.</p>
+    <br>
+    <h4>Queen's First E.P.</h4>
+    <p class="lh-sm">Queen's First E.P. es el primer EP de la banda británica Queen. Publicada el 20 de mayo de 1977 por EMI Records.2​ El álbum consiste de cuatro canciones, una de cada uno de sus cuatro más recientes álbumes en ese punto, con "Good Old-Fashioned Lover Boy" como el sencillo principal.</p>
+
+    <h4>Five Live</h4>
+    <p class="lh-sm">Five Live, publicado en 1993, presenta cinco (en algunos países seis) canciones interpretadas por George Michael, Queen y Lisa Stansfield. Somebody to Love y These Are the Days of Our Lives fueron grabadas en el Concierto Tributo a Freddie Mercury el 20 de abril de 1992 en el Estadio de Wembley. Todos los beneficios derivados de las ventas del EP fueron para Mercury Phoenix Trust.</p>
 
     <center><h2>Álbumes recopilatorios</h2></center>
-    <table border="1" style="margin: 0 auto">
+    <table class="table-bordered" style="margin: 0 auto">
       <tr>
         <td>Año</td>
         <td>Datos del álbum</td>
@@ -682,45 +723,45 @@
         <td>The Studio Collection<br>Publicación: 25 de septiembre<br>Discográfica: Virgin EMI</td>
       </tr>
     </table>
-    <h3>The Complete Works</h3>
-    <p>The Complete Works es una caja recopilatoria de la banda británica Queen, publicada el 5 de diciembre de 1985 por EMI Records.2​Contiene todos los álbumes de estudio, en vivo y canciones que no aparecieron en ningún álbum hasta ese punto.3​ Estaba disponible en formato de vinilo y casete.</p>
+    <h4>The Complete Works</h4>
+    <p class="lh-sm">The Complete Works es una caja recopilatoria de la banda británica Queen, publicada el 5 de diciembre de 1985 por EMI Records.2​Contiene todos los álbumes de estudio, en vivo y canciones que no aparecieron en ningún álbum hasta ese punto.3​ Estaba disponible en formato de vinilo y casete.</p>
 
-    <h3>CD Single Box</h3>
-    <p>CD Single Box es una caja recopilatoria de la banda británica Queen, lanzada exclusivamente en Japón el 26 de abril de 1991 a través de EMI Records.</p>
+    <h4>CD Single Box</h4>
+    <p class="lh-sm">CD Single Box es una caja recopilatoria de la banda británica Queen, lanzada exclusivamente en Japón el 26 de abril de 1991 a través de EMI Records.</p>
 
-    <h3>Box of Tricks</h3>
-    <p>Box of Tricks es una caja recopilatoria de la banda británica Queen, lanzado en mayo de 1992 a través de Parlophone Records.</p>
+    <h4>Box of Tricks</h4>
+    <p class="lh-sm">Box of Tricks es una caja recopilatoria de la banda británica Queen, lanzado en mayo de 1992 a través de Parlophone Records.</p>
 
-    <h3>The Queen Collection</h3>
-    <p>The Queen Collection es una caja recopilatoria de la banda británica Queen. Publicada el 10 de noviembre de 1992 a través de Hollywood Records en los Estados Unidos como un lanzamiento de edición limitada.</p>
+    <h4>The Queen Collection</h4>
+    <p class="lh-sm">The Queen Collection es una caja recopilatoria de la banda británica Queen. Publicada el 10 de noviembre de 1992 a través de Hollywood Records en los Estados Unidos como un lanzamiento de edición limitada.</p>
 
-    <h3>Greatest Hits I & II</h3>
-    <p>Greatest Hits I & II es una caja recopilatoria de la banda británica Queen, publicada el 7 de noviembre de 1994 por Parlophone Records en el Reino Unido, y el 14 de noviembre de 1995 por Hollywood Records en los Estados Unidos.</p>
+    <h4>Greatest Hits I & II</h4>
+    <p class="lh-sm">Greatest Hits I & II es una caja recopilatoria de la banda británica Queen, publicada el 7 de noviembre de 1994 por Parlophone Records en el Reino Unido, y el 14 de noviembre de 1995 por Hollywood Records en los Estados Unidos.</p>
 
-    <h3>Ultimate Queen</h3>
-    <p>Ultimate Queen es una caja recopilatoria de la banda británica Queen. Publicado el 13 de noviembre de 1995 a través de Parlophone Records.</p>
+    <h4>Ultimate Queen</h4>
+    <p class="lh-sm">Ultimate Queen es una caja recopilatoria de la banda británica Queen. Publicado el 13 de noviembre de 1995 a través de Parlophone Records.</p>
 
-    <h3>The Crown Jewels</h3>
-    <p>The Crown Jewels es una caja recopilatoria de la banda británica Queen. Publicada el 24 de noviembre de 1998 a través de Hollywood Records.</p>
+    <h4>The Crown Jewels</h4>
+    <p class="lh-sm">The Crown Jewels es una caja recopilatoria de la banda británica Queen. Publicada el 24 de noviembre de 1998 a través de Hollywood Records.</p>
 
-    <h3>The Platinum Collection (álbum de Queen)</h3>
-    <p>The Platinum Collection: Greatest Hits I, II & III es una caja recopilatoria de la banda británica Queen que incluye sus tres álbumes de grandes éxitos, Greatest Hits, Greatest Hits II y Greatest Hits III. El álbum fue originalmente publicado el 13 de noviembre de 2000 a través de Parlophone Records. Un folleto con hechos de canciones fue también incluido con los tres CDs. El lanzamiento de Estados Unidos fue aplazado por Hollywood Records hasta septiembre de 2002 y presentaba la edición remasterizada de Japón del 2001 de Greatest Hits I & II en las versiones de Estados Unidos y Canadá. El álbum alcanzó el número 2 en el Reino Unido.</p>
+    <h4>The Platinum Collection (álbum de Queen)</h4>
+    <p class="lh-sm">The Platinum Collection: Greatest Hits I, II & III es una caja recopilatoria de la banda británica Queen que incluye sus tres álbumes de grandes éxitos, Greatest Hits, Greatest Hits II y Greatest Hits III. El álbum fue originalmente publicado el 13 de noviembre de 2000 a través de Parlophone Records. Un folleto con hechos de canciones fue también incluido con los tres CDs. El lanzamiento de Estados Unidos fue aplazado por Hollywood Records hasta septiembre de 2002 y presentaba la edición remasterizada de Japón del 2001 de Greatest Hits I & II en las versiones de Estados Unidos y Canadá. El álbum alcanzó el número 2 en el Reino Unido.</p>
 
-    <h3>The Singles Collection Volume 1</h3>
-    <p>The Singles Collection, Volume 1 es una caja recopilatoria de la banda británica Queen, publicada el 17 de noviembre de 2008 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los 13 primeros sencillos lanzados mundialmente por Queen, incluyendo su lado B.</p>
+    <h4>The Singles Collection Volume 1</h4>
+    <p class="lh-sm">The Singles Collection, Volume 1 es una caja recopilatoria de la banda británica Queen, publicada el 17 de noviembre de 2008 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los 13 primeros sencillos lanzados mundialmente por Queen, incluyendo su lado B.</p>
 
-    <h3>The Singles Collection Volume 2</h3>
-    <p>The Singles Collection, Volume 2 es una caja recopilatoria de la banda británica Queen, publicada el 15 de junio de 2009 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los siguientes 13 sencillos lanzados mundialmente por Queen que aparecen subsecuentes a los del primer volumen.</p>
+    <h4>The Singles Collection Volume 2</h4>
+    <p class="lh-sm">The Singles Collection, Volume 2 es una caja recopilatoria de la banda británica Queen, publicada el 15 de junio de 2009 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los siguientes 13 sencillos lanzados mundialmente por Queen que aparecen subsecuentes a los del primer volumen.</p>
 
-    <h3>The Singles Collection Volume 3</h3>
-      <p>The Singles Collection, Volume 3 es una caja recopilatoria de la banda británica Queen, publicada el 31 de mayo de 2010 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los siguientes 13 sencillos lanzados mundialmente por Queen que aparecen subsecuentes a los del segundo volumen.</p>
+    <h4>The Singles Collection Volume 3</h4>
+      <p class="lh-sm">The Singles Collection, Volume 3 es una caja recopilatoria de la banda británica Queen, publicada el 31 de mayo de 2010 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los siguientes 13 sencillos lanzados mundialmente por Queen que aparecen subsecuentes a los del segundo volumen.</p>
 
-      <h3>The Singles Collection Volume 4</h3>
-      <p>The Singles Collection, Volume 4 es una caja recopilatoria de la banda británica Queen, publicada el 18 de octubre de 2011 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los siguientes 13 sencillos lanzados mundialmente por Queen que aparecen subsecuentes a los del tercer volumen.</p>
+      <h4>The Singles Collection Volume 4</h4>
+      <p class="lh-sm">The Singles Collection, Volume 4 es una caja recopilatoria de la banda británica Queen, publicada el 18 de octubre de 2011 a través de Parlophone Records. El álbum contiene versiones remasterizadas de los siguientes 13 sencillos lanzados mundialmente por Queen que aparecen subsecuentes a los del tercer volumen.</p>
 
-      <h3>The Studio Collection</h3>
-      <p>The Studio Collection es una caja recopilatoria de la banda británica Queen, publicada el 25 de septiembre de 2015 a través de Virgin EMI Records. La caja recopilatoria cubre la carrera de Queen desde 1973 hasta 1995. La caja recopilatoria incluye ediciones remasterizadas de Queen, Queen II, Sheer Heart Attack, A Night at the Opera, A Day at the Races, News of the World, Jazz, The Game, Flash Gordon, Hot Space, The Works, A Kind of Magic, The Miracle, Innuendo, y Made in Heaven.</p>
-    </h3>
+      <h4>The Studio Collection</h4>
+      <p class="lh-sm">The Studio Collection es una caja recopilatoria de la banda británica Queen, publicada el 25 de septiembre de 2015 a través de Virgin EMI Records. La caja recopilatoria cubre la carrera de Queen desde 1973 hasta 1995. La caja recopilatoria incluye ediciones remasterizadas de Queen, Queen II, Sheer Heart Attack, A Night at the Opera, A Day at the Races, News of the World, Jazz, The Game, Flash Gordon, Hot Space, The Works, A Kind of Magic, The Miracle, Innuendo, y Made in Heaven.</p>
     <center><div class="footer1" id="footer">Mastersoft</div></center>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

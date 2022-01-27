@@ -16,8 +16,18 @@ body{
 }
 
 .image2{
-    width: 200px;
+    width: 100px;
     height: 150px;
+}
+
+.image3{
+    width: 1200px;
+    height: 350px;
+}
+
+.size{
+    width: 100px;
+    height: 50px;
 }
 
 .footer{
